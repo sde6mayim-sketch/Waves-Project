@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 150 20% 99%;
+    --foreground: 200 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 25% 15%;
+
+    --primary: 170 65% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 170 30% 95%;
+    --secondary-foreground: 170 65% 26%;
+
+    --muted: 170 15% 95%;
+    --muted-foreground: 200 10% 45%;
+
+    --accent: 170 65% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 170 20% 90%;
+    --input: 170 20% 90%;
+    --ring: 170 65% 36%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 170 65% 36%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 170 15% 95%;
+    --sidebar-accent-foreground: 200 25% 15%;
+    --sidebar-border: 170 20% 90%;
+    --sidebar-ring: 170 65% 36%;
+
+    /* Custom tokens */
+    --hero-heading: 200 30% 12%;
+    --section-bg: 170 20% 97%;
+    --teal-glow: 170 65% 36%;
+  }
+
+  .dark {
+    --background: 200 25% 8%;
+    --foreground: 150 20% 95%;
+    --card: 200 25% 10%;
+    --card-foreground: 150 20% 95%;
+    --popover: 200 25% 10%;
+    --popover-foreground: 150 20% 95%;
+    --primary: 170 60% 45%;
+    --primary-foreground: 200 25% 8%;
+    --secondary: 200 20% 15%;
+    --secondary-foreground: 150 20% 95%;
+    --muted: 200 20% 15%;
+    --muted-foreground: 200 15% 60%;
+    --accent: 200 20% 15%;
+    --accent-foreground: 150 20% 95%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 200 20% 18%;
+    --input: 200 20% 18%;
+    --ring: 170 60% 45%;
+    --sidebar-background: 200 25% 8%;
+    --sidebar-foreground: 150 20% 95%;
+    --sidebar-primary: 170 60% 45%;
+    --sidebar-primary-foreground: 200 25% 8%;
+    --sidebar-accent: 200 20% 15%;
+    --sidebar-accent-foreground: 150 20% 95%;
+    --sidebar-border: 200 20% 18%;
+    --sidebar-ring: 170 60% 45%;
+    --hero-heading: 150 20% 95%;
+    --section-bg: 200 25% 10%;
+    --teal-glow: 170 60% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(170 80% 30%));
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 px-4;
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes waveMove {
+  0% { transform: translateX(0) translateY(0); }
+  25% { transform: translateX(-20px) translateY(-10px); }
+  50% { transform: translateX(10px) translateY(5px); }
+  75% { transform: translateX(-10px) translateY(-5px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
+.parallax-bg {
+  animation: waveMove 8s ease-in-out infinite;
+}

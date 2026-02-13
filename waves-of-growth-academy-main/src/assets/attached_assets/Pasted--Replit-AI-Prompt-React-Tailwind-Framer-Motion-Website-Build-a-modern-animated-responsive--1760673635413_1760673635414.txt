@@ -1,0 +1,135 @@
+⚡ Replit AI Prompt — React + Tailwind + Framer Motion Website
+
+Build a modern, animated, responsive React website using Tailwind CSS and Framer Motion for “The Waves Academy”, a Gospel Music Academy by “The River” ministry.
+The design should feel flowing, spiritual, and musical, expressing the theme: “Flow with the Sound of the Spirit.”
+
+🌊 Brand & Theme
+
+Parent Organization: The River (faith-based music ministry)
+
+Subsidiary: The Waves Academy
+
+Tagline: “Flow with the Sound of the Spirit”
+
+Color Palette:
+
+Deep River Blue #0D3B66
+
+Gold Accent #F4D35E
+
+White / Soft Beige for contrast
+
+Typography:
+
+Headings → Playfair Display (serif, elegant)
+
+Body → Inter (modern, readable)
+
+Mood: Uplifting, creative, worshipful
+
+Visual Motif: Flowing waves, soft gradients, light animations
+
+💻 Pages / Routes
+
+Home Page
+
+Hero section with animated wave background or gradient motion
+
+Tagline + “Join Now” button
+
+About preview (2-column with image + text scroll-reveal)
+
+Featured courses section (card grid with hover lift animation)
+
+Testimonials carousel (fade transitions)
+
+Footer CTA: “Apply Now to The Waves Academy”
+
+About Page
+
+Mission, vision, and connection to The River
+
+Mentor cards with subtle hover scaling
+
+Animated section dividers (wave shapes / gradient transitions)
+
+Courses Page
+
+Responsive grid of courses (Vocals, Instruments, Worship Leading, Audio Engineering)
+
+Animated filter tabs (Beginner / Intermediate / Advanced)
+
+Hover transitions using Framer Motion
+
+Events Page
+
+Upcoming and past events displayed in motion-enabled cards
+
+“Waves Live” banner section with animated glow
+
+Scroll fade-in effects for event tiles
+
+Gallery Page
+
+Masonry photo/video grid
+
+Lightbox popup for images with Framer Motion transitions
+
+Contact Page
+
+Contact form (Name, Email, Message)
+
+Embedded map placeholder
+
+Social icons
+
+Footer text: “A Ministry of The River”
+
+🎬 Animation & Motion Style
+
+Framer Motion scroll reveals (whileInView, fadeIn, slideUp)
+
+Hero background wave animation (CSS or SVG motion path)
+
+Smooth transitions between pages (AnimatePresence)
+
+Button hover states with soft scaling or color glow
+
+Parallax or floating effects on hero elements
+
+Fade/slide-in for testimonials and cards
+
+🧩 Tech Stack
+
+Framework: React (Vite or CRA)
+
+Styling: Tailwind CSS
+
+Animation: Framer Motion
+
+Routing: React Router
+
+Optional libraries: react-icons, swiper.js (for sliders)
+
+📁 Recommended Folder Structure
+src/
+  components/
+    Navbar.jsx
+    Hero.jsx
+    CourseCard.jsx
+    TestimonialSlider.jsx
+    Footer.jsx
+  pages/
+    Home.jsx
+    About.jsx
+    Courses.jsx
+    Events.jsx
+    Gallery.jsx
+    Contact.jsx
+  App.jsx
+  main.jsx
+  index.css
+
+✅ Output Expectation
+
+A fully responsive, animated, and aesthetically fluid React website — visually representing worship, music, and divine flow — perfect for The Waves Academy, combining modern web design with spiritual storytelling.
