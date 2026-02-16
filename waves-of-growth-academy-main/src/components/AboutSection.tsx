@@ -75,7 +75,7 @@ const AboutSection = () => (
 
       <div className="mt-20">
         <h3 className="font-display text-4xl md:text-5xl font-black text-foreground mb-16 text-center">Leadership Team</h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 xl:gap-12">
           {leadershipTeam.map((member) => (
             <div key={member.name} className="text-center group">
               <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl group-hover:shadow-3xl transition-all duration-300 group-hover:scale-105">

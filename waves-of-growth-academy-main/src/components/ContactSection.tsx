@@ -1,7 +1,13 @@
 import { MapPin, Phone, Mail, Heart } from "lucide-react";
+import { useState } from "react";
+import QRCodeModal from "@/components/QRCodeModal";
 
-const ContactSection = () => (
-  <section id="contact" className="section-padding bg-section-bg">
+const ContactSection = () => {
+  const [showQR, setShowQR] = useState(false);
+
+  return (
+    <>
+      <section id="contact" className="section-padding bg-section-bg">
     <div className="container mx-auto max-w-6xl text-center">
       <p className="text-sm font-black tracking-[0.3em] uppercase text-primary mb-6 letter-spacing-wide">Get In Touch</p>
       <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-black leading-tight text-hero-heading mb-8">
@@ -11,7 +17,7 @@ const ContactSection = () => (
         Ready to start your journey of transformation? Reach out to us today.
       </p>
 
-      <div className="grid sm:grid-cols-3 gap-8 mb-16">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8 mb-16">
         <div className="bg-gradient-to-br from-card to-card/80 backdrop-blur-sm border border-border/50 rounded-3xl p-8 flex flex-col items-center gap-4 shadow-xl hover:shadow-2xl transition-shadow duration-300">
           <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
             <Phone className="w-8 h-8 text-primary" />
@@ -42,15 +48,20 @@ const ContactSection = () => (
         <p className="text-primary-foreground/90 max-w-2xl mx-auto text-xl font-light leading-relaxed mb-8">
           Your generous contributions help us continue transforming lives through creative skills and education.
         </p>
-        <a
-          href="mailto:johnebi@hotmail.com?subject=Donation Inquiry"
+        <button
+          onClick={() => setShowQR(true)}
           className="inline-flex items-center gap-3 bg-primary-foreground text-primary font-black px-12 py-4 rounded-full hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-lg"
         >
           <Heart className="w-5 h-5" /> Donate Now
-        </a>
+        </button>
       </div>
     </div>
   </section>
-);
+      
+      {/* QR Code Modal */}
+      <QRCodeModal isOpen={showQR} onClose={() => setShowQR(false)} />
+    </>
+  );
+};
 
 export default ContactSection;

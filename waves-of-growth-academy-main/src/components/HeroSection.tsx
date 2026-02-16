@@ -23,13 +23,10 @@ const HeroSection = () => (
       <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
         Discover your God-given potential at The Waves Academy — Where education meets social impact and creativity transforms lives.
       </p>
-      <div className="mt-10 flex flex-wrap gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.4s" }}>
-        <a href="#about" className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-3 font-medium text-primary-foreground hover:opacity-90 transition-opacity">
-          Learn More
-        </a>
-        <a href="#contact" className="inline-flex items-center justify-center rounded-lg border border-border px-8 py-3 font-medium text-foreground hover:bg-muted transition-colors">
+      <div className="mt-12 flex flex-wrap gap-6 justify-center animate-fade-up" style={{ animationDelay: "0.4s" }}>
+        <a href="#contact" className="inline-flex items-center justify-center rounded-lg bg-primary px-10 py-4 font-medium text-primary-foreground hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg">
           Contact Us
-        </a>
+        </a>;
       </div>
     </div>
   </section>
