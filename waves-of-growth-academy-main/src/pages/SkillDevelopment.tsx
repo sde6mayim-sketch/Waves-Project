@@ -9,6 +9,7 @@ import skillImg from "@/assets/skill-dev.jpg";
 import heroImg from "@/assets/hero-bg.jpg";
 import tnpscImg from "@/assets/tnpsc-coaching.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
+import professionalSkillsImg from "@/assets/skill-development-professional.jpg";
 
 // Custom online image for Digital Skills - matches web development, coding, and tech skills
 const digitalSkillsImg = "https://picsum.photos/seed/web-development-coding-technology/800/600.jpg";
@@ -28,7 +29,7 @@ const SkillDevelopment = () => {
       id: "professional",
       title: "Professional Skills",
       description: "Develop workplace competencies", 
-      image: musicImg,
+      image: professionalSkillsImg,
       skills: ["Communication Skills", "Leadership", "Project Management", "Time Management", "Team Building"]
     },
     {
